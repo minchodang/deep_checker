@@ -5,10 +5,17 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky",
+    "preinstall": "corepack enable",
+    "start": "turbo start"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "@commitlint/config-conventional": "^19.6.0",
+    "eslint": "^9.15.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.4.2",
     "turbo": "^2.3.3",
     "typescript": "5.5.4"
   },
